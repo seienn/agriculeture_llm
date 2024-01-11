@@ -6,6 +6,7 @@ import os
 #from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from LLM import InternLM_LLM
+import pysqlite3
 import sys
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 import chromadb
