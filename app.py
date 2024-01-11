@@ -3,8 +3,9 @@ import gradio as gr
 from langchain.vectorstores import Chroma
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 import os
-from LLM import InternLM_LLM
+#from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
+from code.LLM import InternLM_LLM
 
 def load_chain():
     # 加载问答链
