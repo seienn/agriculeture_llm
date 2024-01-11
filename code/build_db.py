@@ -43,14 +43,7 @@ def get_text(dir_path):
     return docs
 
 # 目标文件夹
-tar_dir = [
-    "/root/data/InternLM",
-    "/root/data/InternLM-XComposer",
-    "/root/data/lagent",
-    "/root/data/lmdeploy",
-    "/root/data/opencompass",
-    "/root/data/xtuner"
-]
+tar_dir = ["./data]
 
 # 加载目标文件
 docs = []
@@ -63,7 +56,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 split_docs = text_splitter.split_documents(docs)
 
 # 加载开源词向量模型
-embeddings = HuggingFaceEmbeddings(model_name="/root/data/model/sentence-transformer")
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformer")
 
 # 构建向量数据库
 # 定义持久化路径
