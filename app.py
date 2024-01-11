@@ -15,7 +15,7 @@ import chromadb
 def load_chain():
     # 加载问答链
     # 定义 Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformer")
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-zh")
 
     # 向量数据库持久化路径
     persist_directory = 'data_base/vector_db/chroma'
