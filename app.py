@@ -6,6 +6,9 @@ import os
 #from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from LLM import InternLM_LLM
+import sys
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+import chromadb
 
 def load_chain():
     # 加载问答链
